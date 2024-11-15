@@ -36,14 +36,10 @@ Registeration Number : 212222220019
 ```
 ## MainActivity.java:
 ```
-
 package com.example.ex_5;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -61,10 +57,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent =new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","9840155373",null));
                 intent.putExtra("sms_body","SMS using Intent");
-                startActivity(intent);
-            }
+                startActivity(intent); }
         });
-
     }
 }
 
@@ -89,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
         android:text="send sms"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
-
 </RelativeLayout>
 ```
 
